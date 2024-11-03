@@ -1,5 +1,8 @@
 ;;; init.el -*- lexical-binding: t; -*-
 
+(setenv "PATH" "/opt/homebrew/bin:/opt/homebrew/sbin:/Users/kellytowle/Projects/wsgr/neuron/contributor-assets/bin:/Users/kellytowle/Projects/wsgr/neuron:/Users/kellytowle/.asdf/shims:/Users/kellytowle/.asdf/bin:/Users/kellytowle/.subscript/bin:/Users/kellytowle/bin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/Applications/iTerm.app/Contents/Resources/utilities")
+(setq exec-path (split-string (getenv "PATH") path-separator))
+
 ;; Install Elpaca
 (defvar elpaca-installer-version 0.7)
 (defvar elpaca-directory (expand-file-name "elpaca/" user-emacs-directory))
