@@ -43,6 +43,11 @@
 (add-hook 'after-init-hook #'elpaca-process-queues)
 (elpaca `(,@elpaca-order))
 
+(elpaca (emacs-color-theme-solarized :ensure (:wait t) :demand t
+          :host "https://github.com/sellout/emacs-color-theme-solarized.git"
+          :main "color-theme-solarized-pkg.el")
+  (load-theme 'solarized t))
+
 ;; Prevent Custom from modifying this file.
 (setq custom-file (expand-file-name
                    (format "custom-%d-%d.el" (emacs-pid) (random))
