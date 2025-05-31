@@ -12,6 +12,7 @@
         `(font . ,(concat c/monospace-font "-" (number-to-string c/monospace-font-size)))
         '(internal-border-width . 0)
         '(undecorated-round . t)
+	'(fullscreen . maximized)
         '(left-fringe . 16)
         '(right-fringe . 16))
        default-frame-alist))
